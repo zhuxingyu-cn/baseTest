@@ -10,7 +10,7 @@ import java.io.*;
  * @author 朱兴宇
  * @version 1.0.0
  */
-public class BufferedSteamDemo {
+public class BufferedStreamDemo {
     /*
         BufferedInputStream
             构造方法：
