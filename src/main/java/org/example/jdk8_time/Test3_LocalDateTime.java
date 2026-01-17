@@ -1,5 +1,6 @@
 package org.example.jdk8_time;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
@@ -59,5 +60,12 @@ public class Test3_LocalDateTime {
         System.out.println(localDateTime.isBefore(localDateTime1));//false
         System.out.println(localDateTime.equals(localDateTime1));//false
         System.out.println(localDateTime.isAfter(localDateTime1));//true
+
+        //互相转化，主要是LocalDate+LocalTime-->LocalDateTime 和 LocalDateTime-->LocalDate+LocalTime
+        //可以把LocalDateTime转换成LocalDate和LocalTime，使用to..()
+        LocalDate localDate = localDateTime.toLocalDate();
+        LocalTime localTime = localDateTime.toLocalTime();
+        //用LocalDate和LocalTime转换成LocalDateTime
+        LocalDateTime localDateTime5 = LocalDateTime.of(localDate, localTime);
     }
 }
