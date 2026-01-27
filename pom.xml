@@ -52,16 +52,23 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+       <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.16</version>
+        </dependency>
+
     </dependencies>
 
     <build>
         <plugins>
             <!-- Spring Boot Maven插件 -->
-<!--            打包可执行JAR文件（最主要功能）-->
-<!--            创建"fat JAR"（包含所有依赖）-->
-<!--            内置的运行命令-->
-<!--            生成分层JAR（优化Docker镜像）-->
-<!--            自定义配置选项-->
+            <!--            打包可执行JAR文件（最主要功能）-->
+            <!--            创建"fat JAR"（包含所有依赖）-->
+            <!--            内置的运行命令-->
+            <!--            生成分层JAR（优化Docker镜像）-->
+            <!--            自定义配置选项-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
